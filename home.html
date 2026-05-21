@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ladina Group Ltd - Architectural Excellence &amp; Sustainable Investment</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#6c3919",
+                      "secondary": "#89502e",
+                      "surface-container-low": "#f4f3f3",
+                      "on-surface": "#1a1c1c",
+                      "on-secondary-fixed": "#331200",
+                      "on-primary-fixed-variant": "#474746",
+                      "error-container": "#ffdad6",
+                      "surface-container-highest": "#e2e2e2",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "surface-container-high": "#e8e8e8",
+                      "surface-container": "#eeeeee",
+                      "outline": "#747878",
+                      "tertiary-container": "#1a1c1c",
+                      "on-primary-fixed": "#1c1b1b",
+                      "background": "#f9f9f9",
+                      "surface-tint": "#5f5e5e",
+                      "on-surface-variant": "#444748",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "secondary-fixed": "#ffdbc9",
+                      "surface-dim": "#dadada",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "surface-bright": "#f9f9f9",
+                      "on-primary-container": "#858383",
+                      "primary-fixed": "#e5e2e1",
+                      "on-primary": "#ffffff",
+                      "secondary-container": "#fdb389",
+                      "inverse-on-surface": "#f1f1f1",
+                      "on-secondary-container": "#784322",
+                      "primary-container": "#1c1b1b",
+                      "surface-variant": "#e2e2e2",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-container": "#838484",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-surface": "#2f3131",
+                      "tertiary": "#000000",
+                      "on-secondary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "primary": "#000000",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "outline-variant": "#c4c7c7",
+                      "surface": "#f9f9f9",
+                      "on-background": "#1a1c1c",
+                      "inverse-primary": "#c8c6c5",
+                      "on-error-container": "#93000a",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#ffb68d",
+                      "tertiary-fixed": "#e2e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "max-width": "1440px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-on-surface/80 backdrop-blur-[20px] border-b border-white/20 shadow-sm shadow-black/5">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<a class="font-headline-sm text-headline-sm tracking-[0.2em] text-primary dark:text-surface-bright uppercase" href="home.html">LADINA GROUP</a>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-200 ease-in-out" href="ourProjects.html">Projects</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-200 ease-in-out" href="series.html">Cabin Models</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-200 ease-in-out" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:bg-on-surface transition-colors duration-200 ease-in-out items-center gap-2">
+                    Book Consultation
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden bg-primary">
+<div class="absolute inset-0 z-0">
+<img alt="Luxury A-frame cabin in a scenic landscape" class="w-full h-full object-cover opacity-60 mix-blend-overlay" data-alt="A striking exterior shot of a modern, luxury A-frame cabin nestled in a pristine, snow-dusted alpine landscape at twilight. The cabin features expansive floor-to-ceiling glass windows emitting a warm, inviting amber glow against the cool, dark blues of the surrounding forest and sky. The architectural lines are sharp, minimalist, and precise, contrasting with the organic environment. The scene evokes a premium, serene getaway with high-contrast lighting and a sophisticated, contemporary aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxIdN0DxbtJEuYyLhC6ML6_bDXcPdKfeu6USUjkE1dvCgvlUjelofdggaJDqsWRhDMcUkqcHXsRb1SGAlaBdsqRVVI9gFtjysDoENMTanOC2vXp1txnd00U8ftnLB-P9q0I7GK0Eftt-9OZYEwRgnVVS9PYQnhN_B0WqA8pA3q9PkBOsaKN9Lk-4RpStmh2ivZEQy5i8DRIAimD_jzCaEXidqXTd9UrZ6Li7jzqpiKc8clTUnkY_MVCNTgVMAfgM1GUJvB0MvZm9qY"/>
+</div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop max-w-4xl mx-auto flex flex-col items-center">
+<h1 class="font-display-lg text-display-lg text-white mb-6 drop-shadow-lg tracking-tight leading-tight">Modern A-Frame Cabins.<br/>High-Yield Investments.</h1>
+<p class="font-body-lg text-body-lg text-surface-container-high mb-10 max-w-2xl">Architectural excellence meets sustainable investment. Discover our signature prefabricated cabins designed for rapid deployment and maximum ROI.</p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="bg-white text-primary font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-surface-container-low transition-all duration-200 ease-in-out shadow-[0_0_30px_rgba(0,0,0,0.1)] hover:scale-[1.02]">
+                        View Cabin Models
+                    </button>
+<button class="bg-secondary text-on-secondary font-label-md text-label-md px-8 py-4 rounded-DEFAULT hover:bg-on-secondary-container transition-all duration-200 ease-in-out border border-transparent shadow-[0_0_30px_rgba(0,0,0,0.1)] hover:scale-[1.02]">
+                        Calculate ROI
+                    </button>
+</div>
+</div>
+</section>
+<!-- Signature Architectures -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto bg-background">
+<div class="mb-16 md:mb-20 text-center">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Our Signature Architectures</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Precision-engineered structures optimized for luxury living and lucrative short-term rental markets.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-300 ease-in-out flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img alt="The Alpine-Mini cabin model" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A detailed architectural visualization of a compact, modern A-frame cabin named 'The Alpine-Mini'. Set against a lush, dense evergreen forest during an overcast day, providing soft, diffused, high-key lighting. The cabin utilizes raw, natural timber cladding juxtaposed with matte black metal roofing. The interior, visible through large triangular windows, shows a minimalist, warmly lit space. The aesthetic is clean, sustainable, and highly premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw53eRUfsJ-EA6T_b8jqqXP9mpxk1G7NSYWrT_MbVMYoCOagmiq-pzXCRQzL2Dpf8x5hVXm_V6gVMt0XP5MQ8kRpp8oaqftJYn2BxfqQNYbb7Br1AGueZRCpopTyniDjDg4GMG_fKLWb6CX-sNTcGIJw8Cz9jcbA0dKC8hwBVX2ZJU0ELXwXn1HOKMOnbyicJxCkrR9fXBylvWMwWafNiN1eLw-XHItsaEbChd6fFNUJCTdlWtA0RBQ2bj_KUwNtx3bVYePtZ9Fqlt"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm px-3 py-1 text-xs font-label-md text-primary tracking-wider rounded-sm">450 SQ FT</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">The Alpine-Mini</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary mr-3 text-[20px]">schedule</span>
+                                4 Months Construction
+                            </li>
+<li class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary mr-3 text-[20px]">forest</span>
+                                Eco-Friendly Footprint
+                            </li>
+</ul>
+<button class="w-full border border-primary text-primary font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-primary hover:text-on-primary transition-colors duration-200">
+                            View Floor Plan
+                        </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-300 ease-in-out flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img alt="The Timber-Luxe cabin model" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="A striking 3D rendering of a mid-sized, luxury A-frame cabin named 'The Timber-Luxe'. Situated on a slight incline overlooking a serene, misty lake at dawn. The cabin features a sophisticated blend of charred wood siding (Shou Sugi Ban) and expansive glass panels that reflect the soft, cool morning light. The interior glows warmly. The overall mood is tranquil, exclusive, and architecturally rigorous." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Cf2MKWusBwKHkJXcd7_OKg_ni6dT3xD7XpMFiELgIAMWgY7M5kFapvg0XpTG4ybKxAtrDtG8jC__AUOrSLzu1-2n_4Ys6fXJ--5ZBBlHTnZlieG4m_eFTN8d0u_cCUWMTMbKxyOs5BmNyzBb7IoEBVcdHkj4MhoRKFRPqy5BbfjKteyk6bztH9rBlDPChmQ3KmRlSYuQ05XykzEQ8Jlou8KkiLJsv8bUsN28IRRbBjBZM0m6_-v8BxREoUYEwP8UxhwAhVY1Imda"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm px-3 py-1 text-xs font-label-md text-primary tracking-wider rounded-sm">850 SQ FT</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">The Timber-Luxe</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary mr-3 text-[20px]">schedule</span>
+                                6 Months Construction
+                            </li>
+<li class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary mr-3 text-[20px]">hot_tub</span>
+                                Premium Amenities
+                            </li>
+</ul>
+<button class="w-full border border-primary text-primary font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-primary hover:text-on-primary transition-colors duration-200">
+                            View Floor Plan
+                        </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface border border-surface-variant rounded-DEFAULT overflow-hidden hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] transition-all duration-300 ease-in-out flex flex-col">
+<div class="relative h-64 overflow-hidden bg-surface-variant">
+<img alt="The Horizon-Grande cabin model" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="An expansive, high-end architectural rendering of a large, multi-level A-frame structure named 'The Horizon-Grande'. Set against a dramatic mountain backdrop under a clear blue sky. The building uses a mix of pale concrete, rich cedar accents, and massive curtain-wall glazing. The lighting is bright and directional, casting strong, clean shadows that emphasize the minimalist geometry. The scene feels imposing, luxurious, and highly structural." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWesiutKxR7eoHeAViw8t_MGJ-ZC_Ap2rZIs5rwcnUbJoFL0oXWvCGd_DL_8Y46iwWArAKlRhNyy7PYgeIRPYSdno7xw4Dz06tYDYWOfoSsNnB7OawvtcMNNZuHRzH8DPP0Px8oqHIhdoCNvAcnv0u6HLFTX6tp9yZ6Z9X0w6weMHSQFRBvohrRGThV6tQGAinUTd1CwSa9FrDjIQML_I5JSE8u0xkIg_Uaxb6gpyyvj8yPsJdP4TtdvucdfNWv_yEPxVijSCT9E4h"/>
+<div class="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm px-3 py-1 text-xs font-label-md text-primary tracking-wider rounded-sm">1200 SQ FT</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">The Horizon-Grande</h3>
+<ul class="space-y-3 mb-8 flex-grow">
+<li class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary mr-3 text-[20px]">schedule</span>
+                                8 Months Construction
+                            </li>
+<li class="flex items-center text-on-surface-variant font-body-md text-body-md">
+<span class="material-symbols-outlined text-secondary mr-3 text-[20px]">groups</span>
+                                Multi-Family Capable
+                            </li>
+</ul>
+<button class="w-full border border-primary text-primary font-label-md text-label-md py-3 rounded-DEFAULT hover:bg-primary hover:text-on-primary transition-colors duration-200">
+                            View Floor Plan
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- ROI Calculator -->
+<section class="py-24 bg-surface-container-low border-y border-surface-variant">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Estimate Your Returns</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">Use our interactive tool to project the potential revenue and Return on Investment based on current market data for luxury short-term rentals.</p>
+<div class="space-y-8 bg-surface p-8 border border-surface-variant rounded-DEFAULT shadow-[0_30px_60px_-20px_rgba(0,0,0,0.03)]">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-3">Select Cabin Model</label>
+<select class="w-full bg-background border-b border-outline hover:border-secondary focus:border-secondary focus:ring-0 px-0 py-3 text-primary font-body-md transition-colors duration-200 bg-transparent">
+<option value="450">The Alpine-Mini (Est. $150k)</option>
+<option value="850">The Timber-Luxe (Est. $280k)</option>
+<option value="1200">The Horizon-Grande (Est. $450k)</option>
+</select>
+</div>
+<div>
+<div class="flex justify-between mb-3">
+<label class="font-label-md text-label-md text-primary">Estimated Nightly Rate</label>
+<span class="font-label-md text-secondary">$350 / night</span>
+</div>
+<input class="w-full h-1 bg-surface-variant rounded-full appearance-none cursor-pointer accent-secondary" max="1000" min="50" type="range" value="350"/>
+</div>
+<div>
+<div class="flex justify-between mb-3">
+<label class="font-label-md text-label-md text-primary">Target Occupancy Rate</label>
+<span class="font-label-md text-secondary">65%</span>
+</div>
+<input class="w-full h-1 bg-surface-variant rounded-full appearance-none cursor-pointer accent-secondary" max="100" min="0" type="range" value="65"/>
+</div>
+</div>
+</div>
+<!-- Live Output Card -->
+<div class="bg-primary text-white p-10 md:p-14 rounded-DEFAULT relative overflow-hidden">
+<!-- Glassmorphic effect background elements -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-secondary/20 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col h-full justify-center">
+<h3 class="font-headline-sm text-headline-sm text-surface-variant mb-12 uppercase tracking-widest text-sm opacity-80">Projected Performance</h3>
+<div class="mb-12">
+<p class="font-label-md text-label-md text-surface-variant mb-2">Estimated Monthly Revenue</p>
+<p class="font-display-lg text-display-lg font-light tracking-tight">$6,825<span class="text-xl text-surface-variant ml-2">/mo</span></p>
+</div>
+<div class="w-full h-px bg-white/10 mb-12"></div>
+<div>
+<p class="font-label-md text-label-md text-surface-variant mb-2">Estimated Annual ROI</p>
+<div class="flex items-baseline gap-4">
+<p class="font-display-lg text-[80px] font-light text-secondary-container leading-none">18.2<span class="text-4xl">%</span></p>
+</div>
+</div>
+<p class="text-xs text-surface-variant/50 mt-10 font-body-md">* Projections are estimates based on user inputs and market averages. Not a guarantee of returns.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Capture Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-gutter">
+<!-- Left: Trust & Value Prop -->
+<div class="lg:col-span-5 flex flex-col justify-center pr-0 lg:pr-12">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">Ready to Build Your Portfolio?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">Partner with Ladina Group to develop high-yield, aesthetically striking architectural assets. Our streamlined process ensures rapid deployment and minimal site impact.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-surface flex items-center justify-center border border-surface-variant mr-4 shrink-0">
+<span class="material-symbols-outlined text-secondary">verified</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-primary mb-1">10-Year Structural Warranty</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Guaranteed stability and quality craftsmanship on all core structural elements.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-surface flex items-center justify-center border border-surface-variant mr-4 shrink-0">
+<span class="material-symbols-outlined text-secondary">speed</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-primary mb-1">Fast Turnaround</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Prefabrication drastically reduces on-site construction time to mere weeks.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-12 h-12 rounded-full bg-surface flex items-center justify-center border border-surface-variant mr-4 shrink-0">
+<span class="material-symbols-outlined text-secondary">eco</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-[18px] text-primary mb-1">Eco-Friendly Materials</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Sourced sustainably to minimize carbon footprint and integrate with nature.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Contact Form -->
+<div class="lg:col-span-7 bg-surface p-10 md:p-14 border border-surface-variant rounded-DEFAULT">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-8">Request a Consultation</h3>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer font-body-md" id="name" placeholder=" " type="text"/>
+<label class="absolute font-body-md text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="name">Full Name</label>
+</div>
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer font-body-md" id="email" placeholder=" " type="email"/>
+<label class="absolute font-body-md text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="email">Email Address</label>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative">
+<input class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer font-body-md" id="phone" placeholder=" " type="tel"/>
+<label class="absolute font-body-md text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="phone">Phone Number</label>
+</div>
+<div class="relative">
+<select class="block w-full px-0 py-3 bg-transparent border-0 border-b border-outline appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer font-body-md text-primary" id="budget">
+<option disabled="" hidden="" selected="" value=""></option>
+<option value="150k-300k">$150k - $300k</option>
+<option value="300k-500k">$300k - $500k</option>
+<option value="500k+">$500k+</option>
+</select>
+<label class="absolute font-body-md text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="budget">Budget Range</label>
+<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+<span class="material-symbols-outlined text-outline">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex items-center mt-6">
+<input class="w-5 h-5 text-secondary bg-transparent border-outline rounded-sm focus:ring-secondary focus:ring-2 cursor-pointer" id="own-land" type="checkbox"/>
+<label class="ml-3 font-body-md text-on-surface-variant cursor-pointer" for="own-land">I already own land for this project</label>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md text-label-md py-4 mt-8 rounded-DEFAULT hover:bg-on-surface transition-all duration-200 ease-in-out flex justify-center items-center gap-2 group" type="button">
+                            Submit Inquiry
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 bg-surface dark:bg-on-surface border-t border-surface-container-high dark:border-outline-variant text-on-surface dark:text-surface-container-low font-body-md text-body-md">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start md:items-center gap-gutter">
+<div class="mb-8 md:mb-0">
+<a class="font-headline-sm text-headline-sm text-primary dark:text-surface-bright tracking-[0.2em] uppercase block mb-4" href="#">LADINA GROUP</a>
+<p class="text-on-surface-variant dark:text-surface-variant text-sm max-w-sm">© 2024 Ladina Group Ltd. Architectural Excellence &amp; Sustainable Investment.</p>
+</div>
+<nav class="flex flex-col sm:flex-row gap-4 sm:gap-8">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Investment Disclaimer</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Terms of Service</a>
+</nav>
+</div>
+</footer>
+</body></html>

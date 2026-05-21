@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ladina Group - Cabin Models</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2f3131",
+                        "primary": "#000000",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "background": "#f9f9f9",
+                        "on-tertiary-container": "#838484",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#474746",
+                        "tertiary": "#000000",
+                        "surface-tint": "#5f5e5e",
+                        "on-error": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "on-surface": "#1a1c1c",
+                        "secondary": "#89502e",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#858383",
+                        "surface-container-low": "#f4f3f3",
+                        "on-secondary-fixed": "#331200",
+                        "surface-dim": "#dadada",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#c8c6c5",
+                        "outline": "#747878",
+                        "secondary-fixed-dim": "#ffb68d",
+                        "primary-fixed": "#e5e2e1",
+                        "on-secondary-fixed-variant": "#6c3919",
+                        "surface-variant": "#e2e2e2",
+                        "on-surface-variant": "#444748",
+                        "secondary-fixed": "#ffdbc9",
+                        "outline-variant": "#c4c7c7",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#1a1c1c",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary-fixed": "#1c1b1b",
+                        "surface-bright": "#f9f9f9",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#fdb389",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary-fixed": "#e2e2e2",
+                        "primary-container": "#1c1b1b",
+                        "on-primary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "on-secondary-container": "#784322"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "max-width": "1440px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopNavBar Shared Component -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-on-surface/80 backdrop-blur-[20px] border-b border-white/20 shadow-sm shadow-black/5">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<a class="font-headline-sm text-headline-sm tracking-[0.2em] text-primary dark:text-surface-bright uppercase" href="home.html">LADINA GROUP</a>
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-200 ease-in-out" href="ourProjects.html">Projects</a>
+<a class="font-label-md text-label-md text-secondary dark:text-secondary-fixed border-b border-secondary pb-1 transition-all duration-200 ease-in-out" href="series.html">Cabin Models</a>
+<a class="font-label-md text-label-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-200 ease-in-out" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="hidden md:inline-flex bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:bg-on-surface transition-colors duration-200 ease-in-out items-center gap-2">
+                    Book Consultation
+                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-24">
+<!-- Header Section -->
+<header class="px-margin-desktop max-w-max-width mx-auto mb-24 md:px-margin-desktop px-margin-mobile">
+<h1 class="font-display-lg text-display-lg text-primary mb-6">A-Frame Series Models</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Explore our flagship collection of meticulously engineered A-Frame cabins. Designed for minimal environmental impact and maximum architectural resonance, each model offers a unique balance of spatial efficiency and premium materiality.</p>
+</header>
+<!-- Model 1: The Alpine-Mini -->
+<section class="px-margin-desktop max-w-max-width mx-auto mb-32 md:px-margin-desktop px-margin-mobile">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Hero Image Grid -->
+<div class="lg:col-span-7 grid grid-cols-2 gap-unit">
+<div class="col-span-2 aspect-[16/9] bg-surface-container-high rounded-DEFAULT overflow-hidden">
+<img alt="The Alpine-Mini cabin exterior in a snowy setting." class="w-full h-full object-cover" data-alt="A striking minimalist A-frame cabin named The Alpine-Mini nestled in a pristine snowy landscape. The architectural photography highlights the clean lines of the black timber cladding contrasting with the bright white snow. Soft, natural winter light bathes the scene, creating a tranquil, high-end aesthetic. The mood is serene, isolated, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDduUhOR1Yq-tEhuFEhpEjYJs3VnRYI8yWOrw6gJM3QO4G-UKPqMK9YwSgJQ1yYDFaxozU51g3A_ewFwGmnm3rvWCs85G72tAMaYyyeym2Tn2IKMQQ4Zi5FW3j93HbGpwHaUA1F9zZ9MJv4tC2bMBZdKlOoJ37XBRThj2pp7oxbjrKPeW7d_WZSFpwPOBDoOsHgewoXhmlQ1uDEu84d48zD_jc5xgbaebKQ4xDpT7gpcpgmexo1bFNOadU3Wy-DIjKh_W0S32Qi7KKI"/>
+</div>
+</div>
+<!-- Specs & Details -->
+<div class="lg:col-span-5 lg:pl-12 flex flex-col justify-center">
+<div class="mb-4 inline-flex items-center gap-2 bg-surface-container px-3 py-1 rounded-DEFAULT">
+<span class="material-symbols-outlined text-[16px] text-secondary">forest</span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Compact Living</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">The Alpine-Mini</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">An exercise in spatial economy. The Alpine-Mini is our most agile structure, ideal for remote retreats or auxiliary guest housing. It features a hyper-efficient footprint without compromising the soaring verticality signature to the A-Frame typology.</p>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Footprint</span>
+<span class="font-label-md text-label-md text-primary uppercase">450 sq ft</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Primary Material</span>
+<span class="font-label-md text-label-md text-primary uppercase">Charred Cedar</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Insulation Rating</span>
+<span class="font-label-md text-label-md text-primary uppercase">R-30 Modular</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-6 mt-auto">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Starting From</span>
+<span class="font-headline-md text-headline-md text-primary">$125,000</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface text-primary border border-outline font-label-md text-label-md uppercase tracking-widest px-6 py-3 rounded-DEFAULT hover:border-primary hover:tracking-wider transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                            Floor Plan
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Model 2: The Timber-Luxe (Asymmetric Layout) -->
+<section class="px-margin-desktop max-w-max-width mx-auto mb-32 md:px-margin-desktop px-margin-mobile">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Specs & Details (Left side this time) -->
+<div class="lg:col-span-5 lg:pr-12 flex flex-col justify-center order-2 lg:order-1">
+<div class="mb-4 inline-flex items-center gap-2 bg-surface-container px-3 py-1 rounded-DEFAULT">
+<span class="material-symbols-outlined text-[16px] text-secondary">architecture</span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Flagship Design</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">The Timber-Luxe</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Our core offering balances generous living areas with striking architectural honesty. The Timber-Luxe incorporates expansive structural glazing on the primary facade, dissolving the boundary between the interior sanctuary and the surrounding environment.</p>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Footprint</span>
+<span class="font-label-md text-label-md text-primary uppercase">1,200 sq ft</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Primary Material</span>
+<span class="font-label-md text-label-md text-primary uppercase">Glulam Douglas Fir</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant pb-2">
+<span class="font-body-md text-body-md text-on-surface-variant">Insulation Rating</span>
+<span class="font-label-md text-label-md text-primary uppercase">R-45 Passive</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-6 mt-auto">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Starting From</span>
+<span class="font-headline-md text-headline-md text-primary">$340,000</span>
+</div>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-surface text-primary border border-outline font-label-md text-label-md uppercase tracking-widest px-6 py-3 rounded-DEFAULT hover:border-primary hover:tracking-wider transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                            Floor Plan
+                        </a>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="aspect-[4/3] bg-surface-container-high rounded-DEFAULT overflow-hidden">
+<img alt="The Timber-Luxe interior showing large windows." class="w-full h-full object-cover" data-alt="Interior architectural shot of The Timber-Luxe A-frame cabin. The image features a vast, triangular glazed wall overlooking a lush forest. The interior utilizes warm Douglas Fir glulam beams and minimalist concrete flooring. The lighting is bright and natural, reflecting off the clean, high-end surfaces. The mood is expansive, luxurious, and deeply connected to nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDULvr3IVwcAH-Kzcbl71cuvmQNwN3tI44dijocMqZmzalaX3fqpM3qssKw5z2l4lFrYp7hop7NpGQ8Oshwv97IlEOVvnNflc0DtQaxR9ClTl1JcRW8UiSrN0dBmrnjKiT6ZcFhu4ux2d9peQZ_H4cJcT3TJbnsVh-x8pq_XSIVLyvwpW2lUidNvt1KNu2JS4roqdZwjzCcIf1uaz4xDZsFob2eegUiP-A27-vjy9X_4DG8imXslCNiQD87ragOmog8sk4qmYNL5Ca9"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Model 3: The Horizon-Grande (Bento Grid Style) -->
+<section class="px-margin-desktop max-w-max-width mx-auto mb-32 md:px-margin-desktop px-margin-mobile">
+<div class="text-center mb-16">
+<div class="mb-4 inline-flex items-center justify-center gap-2 bg-surface-container px-3 py-1 rounded-DEFAULT mx-auto">
+<span class="material-symbols-outlined text-[16px] text-secondary">domain</span>
+<span class="font-label-md text-label-md text-primary uppercase tracking-widest">Estate Scale</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">The Horizon-Grande</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">The pinnacle of our series. A multi-volume structure designed for legacy estates, featuring dual connecting A-frames and premium custom millwork throughout.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-unit md:gap-gutter">
+<!-- Large Feature Image -->
+<div class="md:col-span-2 aspect-[16/9] md:aspect-auto bg-surface-container-high rounded-DEFAULT overflow-hidden relative group">
+<img alt="The Horizon-Grande exterior." class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Exterior view of a sprawling, estate-scale dual A-frame structure named The Horizon-Grande. The modern architecture features extensive glass facades and dark metallic roofing, set against a dramatic dusk sky. Warm interior lighting spills out onto sleek outdoor decking. The aesthetic is ultra-premium, monumental, and cutting-edge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF3uGAY_Kk1CxgojpYw86uTb9gpjJY81uQ_A2Sw2t_EWtCc_lzwLLGfeTtU3NIvluMn5ybLUpzTdQbZurEr69fXVoNBRGD70YfB9uEyft329mq5fqhnXNxYBK3tb80IS79adWR4aEfzZ6jZ8y5QCDNPiKfzcFvVFhk4-P2jmNIU9as_Eih5zAHbSXbBvZEpObE9UOrgNvsQAmbQqZvqBdFG5uISgY7dp91EMts23r-pBrn2muLDVyw_gXoiUcF4hi6HgA3_ua_bFC0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-2">Monumental Scale</h3>
+<p class="font-body-md text-body-md text-surface-variant">Dual-volume architecture for multi-generational living.</p>
+</div>
+</div>
+</div>
+<!-- Specs Column -->
+<div class="md:col-span-1 flex flex-col gap-unit md:gap-gutter">
+<div class="bg-surface-container rounded-DEFAULT p-8 flex-1 flex flex-col justify-center border border-outline-variant/30">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-2 block">Footprint</span>
+<span class="font-headline-md text-headline-md text-primary">3,800 sq ft</span>
+<div class="w-full h-px bg-outline-variant my-4"></div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-2 block">Primary Material</span>
+<span class="font-headline-sm text-headline-sm text-primary">Steel &amp; Mass Timber</span>
+<div class="w-full h-px bg-outline-variant my-4"></div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mb-2 block">Starting From</span>
+<span class="font-headline-md text-headline-md text-secondary">$1,250,000</span>
+</div>
+<a class="bg-primary text-on-primary rounded-DEFAULT p-6 flex items-center justify-between hover:tracking-wider transition-all duration-200 ease-in-out group" href="#">
+<span class="font-label-md text-label-md uppercase tracking-widest">Download Full Specs</span>
+<span class="material-symbols-outlined text-[24px] transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Comparison Table Section -->
+<section class="px-margin-desktop max-w-max-width mx-auto mb-24 md:px-margin-desktop px-margin-mobile">
+<h2 class="font-headline-md text-headline-md text-primary mb-8 border-b border-primary pb-4">Model Comparison matrix</h2>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b-2 border-primary">
+<th class="py-6 px-4 font-label-md text-label-md uppercase tracking-widest text-on-surface-variant w-1/4">Specification</th>
+<th class="py-6 px-4 font-headline-sm text-headline-sm text-primary w-1/4">Alpine-Mini</th>
+<th class="py-6 px-4 font-headline-sm text-headline-sm text-primary w-1/4">Timber-Luxe</th>
+<th class="py-6 px-4 font-headline-sm text-headline-sm text-primary w-1/4">Horizon-Grande</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-5 px-4 font-label-md text-label-md uppercase text-on-surface-variant">Intended Use</td>
+<td class="py-5 px-4">Guest House / Studio</td>
+<td class="py-5 px-4">Primary Residence</td>
+<td class="py-5 px-4">Legacy Estate</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-5 px-4 font-label-md text-label-md uppercase text-on-surface-variant">Footprint</td>
+<td class="py-5 px-4">450 sq ft</td>
+<td class="py-5 px-4">1,200 sq ft</td>
+<td class="py-5 px-4">3,800 sq ft</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-5 px-4 font-label-md text-label-md uppercase text-on-surface-variant">Bedrooms</td>
+<td class="py-5 px-4">1 Loft</td>
+<td class="py-5 px-4">2 - 3</td>
+<td class="py-5 px-4">4 - 6</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface-container-low transition-colors duration-150">
+<td class="py-5 px-4 font-label-md text-label-md uppercase text-on-surface-variant">Base Build Time</td>
+<td class="py-5 px-4">12 Weeks</td>
+<td class="py-5 px-4">24 Weeks</td>
+<td class="py-5 px-4">48 Weeks</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-surface-container dark:bg-tertiary-container w-full py-16 border-t border-outline-variant fade-in duration-300">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-max-width mx-auto md:px-margin-desktop px-margin-mobile">
+<div class="md:col-span-1">
+<span class="font-headline-sm text-headline-sm text-primary dark:text-on-primary block mb-4">Ladina Group</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Ladina Group. Precision in Architecture.</p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-8 md:justify-end font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Investor Relations</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>
